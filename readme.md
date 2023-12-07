@@ -1,12 +1,12 @@
 # listdict
 
-Pure python utility functions for working with lists of dictionaries.
+Pure Python utility functions for working with lists of dictionaries.
 
-I have found that, in python, lists of dictionaries are very powerfull and flexible datastructures
-when handeling moderate amounts of data, given a handfull of functions to deial with them properly.
+I have found that, in Python, lists of dictionaries are very powerful and flexible datastructures
+when handling moderate amounts of data, given a handful of functions to deal with them properly.
 
 If the data is too large, or performance is very important,
-then storing data in python objects and manipulating them with pure python code is a bad idea,
+then storing data in Python objects and manipulating them with pure Python code is a bad idea,
 but for moderate amounts of data, I have found that performance has not been an issue.
 
 
@@ -23,12 +23,12 @@ data = [
     ]
 ```
 
-Its easy to pull out a list of each of the variables
+It's easy to pull out a list of each of the variables
 ```python
 names, ages = get('name','age', data)
 ```
 
-Its eaisy to transform the data
+Its easy to transform the data
 ```python
 data = transform(
     dict(
@@ -39,16 +39,16 @@ data = transform(
     data)
 ```
 
-If some of the data is missing, we can add standin data, so that all the dicts have the same field
+If some of the data is missing, we can add stand-in data, so that all the dicts have the same field
 ```python
 data = hermoginise(data, default='missing data')
 ```
 
-If you want to print out the data, you can use the ``to_table(data)`` function to output a OrgMode formated table.
+If you want to print out the data, you can use the ``to_table(data)`` function to output an OrgMode formatted table.
 
 If you want to read or write to csv, you can use the ``to_csv` and ``from_csv`` functions.
 
-Several other functions like `remove`, `join`, and `filter` are also avalible.
+Several other functions like `remove`, `join`, and `filter` are also available.
 
 
 ## Conventions and Principles
@@ -56,6 +56,7 @@ Several other functions like `remove`, `join`, and `filter` are also avalible.
 1. in the source code variables called `LD` == List Dictionary :: [dict]
 2. D == dictionary
 3. functions that act on LDs,
-4. have them as there last argument.
-5. no functions modify there arguments
-6. all functions functions are eger, not lazy.
+4. have them as their last argument.
+5. no functions modify their arguments
+6. all functions functions are eager, not lazy.
+7. Code is PEP8 complient
