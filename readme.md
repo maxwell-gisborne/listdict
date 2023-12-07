@@ -3,7 +3,7 @@
 > Its better to have a small amount of data structures with a large amount of functions over them
 > then a large amount od data structures, each with only a few functions
 >
-> or something like that, Rich Hickey maybe ?
+> Rich Hickey maybe? Parraphrased probably.
 
 Pure Python utility functions for working with lists of dictionaries.
 
