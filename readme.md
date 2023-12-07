@@ -1,9 +1,9 @@
 # listdict
 
-> Its better to have a small amount of data structures with a large amount of functions over them
-> then a large amount od data structures, each with only a few functions
+> It's better to have a small number of types with a large number of functions over them
+> then a large number of types, each with only a few functions
 >
-> Rich Hickey maybe? Parraphrased probably.
+> Rich Hickey maybe? Paraphrased probably.
 
 Pure Python utility functions for working with lists of dictionaries.
 
