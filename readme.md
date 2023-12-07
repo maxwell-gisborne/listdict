@@ -46,7 +46,7 @@ data = hermoginise(data, default='missing data')
 
 If you want to print out the data, you can use the ``to_table(data)`` function to output an OrgMode formatted table.
 
-If you want to read or write to csv, you can use the ``to_csv` and ``from_csv`` functions.
+If you want to read or write to csv, you can use the ``to_csv`` and ``from_csv`` functions.
 
 Several other functions like `remove`, `join`, and `filter` are also available.
 
