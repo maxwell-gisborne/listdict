@@ -1,5 +1,10 @@
 # listdict
 
+> Its better to have a small amount of data structures with a large amount of functions over them
+> then a large amount od data structures, each with only a few functions
+>
+> or something like that, Rich Hickey maybe ?
+
 Pure Python utility functions for working with lists of dictionaries.
 
 I have found that, in Python, lists of dictionaries are very powerful and flexible datastructures
@@ -53,10 +58,10 @@ Several other functions like `remove`, `join`, and `filter` are also available.
 
 ## Conventions and Principles
 
-1. in the source code variables called `LD` == List Dictionary :: [dict]
-2. D == dictionary
-3. functions that act on LDs,
-4. have them as their last argument.
-5. no functions modify their arguments
-6. all functions functions are eager, not lazy.
-7. Code is PEP8 complient
+
+1. In the source code, variables called `LD` are lists of dictionaries.
+2. In the source code, variables called `D` are dictionaries, normally from an LD.
+3. Functions that act on LDs have them as their last argument, this preserves a consistent reading order.
+5. No functions modify their arguments.
+6. All functions functions are eager, not lazy.
+7. Code is PEP8 compliant
