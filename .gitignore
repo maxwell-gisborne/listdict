@@ -1,4 +1,7 @@
-__pycache__
-.env
-.trampolim
-dist
+listdict.egg-info
+.env/
+.trampolim/
+__pycache__/
+build/
+dist/
+listdict.egg-info/
