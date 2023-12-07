@@ -14,12 +14,13 @@ but for moderate amounts of data, I have found that performance has not been an 
 
 
 Given some data;
+
 ``` python
 data = [
-    {name: 'Sherlock', age: 32, address: '21 Bakers street, Ldn'},
-    {name: 'Jhon', age: 37, address: 'i dont know ive not read the books'},
-    {name: 'Kevin', age: 55, address: 'less then 5 connections from you'},
-    {name: 'Joe', age: inf, address: 'The White House, DC'},
+    dict(name='Sherlock', age= 32, address= '21 Bakers street, Ldn'),
+    dict(name= 'Jhon', age= 37, address= 'i dont know ive not read the books'),
+    dict(name= 'Kevin', age= 55, address= 'less then 5 connections from you'),
+    dict(name= 'Joe', age= inf, address= 'The White House, DC'),
     ]
 ```
 
@@ -44,7 +45,16 @@ If some of the data is missing, we can add stand-in data, so that all the dicts 
 data = hermoginise(data, default='missing data')
 ```
 
-If you want to print out the data, you can use the ``to_table(data)`` function to output an OrgMode formatted table.
+If you want to print out the data, you can use the ``to_table(data)`` function to output an OrgMode formatted table,
+which would look like this:
+```
+|                            address |     name | age |
+|              21 BAKERS STREET, LDN | Sherlock |  33 |
+| I DONT KNOW IVE NOT READ THE BOOKS |     Jhon |  38 |
+|   LESS THEN 5 CONNECTIONS FROM YOU |    Kevin |  56 |
+|                THE WHITE HOUSE, DC |      Joe | inf |
+```
+
 
 If you want to read or write to csv, you can use the ``to_csv`` and ``from_csv`` functions.
 
