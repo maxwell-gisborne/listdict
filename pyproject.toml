@@ -1,0 +1,15 @@
+[project]
+name = 'listdict'
+version = '1.0'
+description = 'Utility functions for handeling lists of dictionaries.'
+readme = 'readme.md'
+requiers-python = '=>3.9'
+license = { file = 'LICENSE' }
+authors = [
+        { name = 'Maxwell Gisborne', email = 'maxwell.gisborne+pypi@plymouth.ac.uk'}
+]
+classifiers = [
+    'Development Status :: 5 - Production/Stable',
+]
+dependencies = [
+]
